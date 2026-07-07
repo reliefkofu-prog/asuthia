@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ワイヤーフレーム：お問い合わせ | アスティア (ASTIA)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 共通ヘッダー -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="logo.png" alt="asuthia -アスティア-">
+      </a>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="product.html">製品紹介</a></li>
+          <li><a href="cases.html">導入事例</a></li>
+          <li><a href="faq.html">よくある質問</a></li>
+          <li><a href="company.html">会社案内</a></li>
+          <li><a href="contact.html" class="active">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 6-1. ページタイトルエリア -->
+    <div class="page-header">
+      <div class="container">
+        <h1 class="page-title">お問い合わせ</h1>
+      </div>
+    </div>
+
+    <!-- 6-1. 製品カタログはこちらから -->
+    <section class="section bg-light" style="padding: 40px 0;">
+      <div class="container" style="max-width: 900px;">
+        <div class="cta-banner" style="margin: 0; background-color: #fff; border: 1px solid var(--color-border); border-radius: 6px; padding: 40px; text-align: left;">
+          <h2 class="section-title" style="text-align: left; margin-bottom: 16px;">製品カタログ</h2>
+          <p style="color: #495057; line-height: 1.7; margin-bottom: 30px; font-size: 14px; text-align: left; max-width: 800px; margin-left: 0; margin-right: auto;">アスティアの仕組みや特徴、製品タイプ、導入イメージ、よくあるご質問をまとめた製品カタログをご用意しています。<br><br>導入をご検討中の方はもちろん、まずは情報収集をしたい方、社内資料として確認したい方もお気軽にお問い合わせください。<br><br>公共施設、観光地、キャンプ場、工事現場、山岳地、防災・避難所対策など、設置場所や用途に合わせた資料確認にもご活用いただけます。</p>
+          <div style="margin-bottom: 0; text-align: left;">
+            <a href="catalog.pdf" target="_blank" style="text-decoration: underline; font-weight: bold; color: var(--color-black); display: inline-flex; align-items: center; gap: 8px; font-size: 16px;">
+              📄 [PDF] 製品カタログはこちらから（PDF形式 / 約4.2MB）
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6-2. お問い合わせフォーム -->
+    <section id="form-area" class="section">
+      <div class="container" style="max-width: 900px;">
+        <h2 class="section-title">お問い合わせフォーム</h2>
+        <p style="color: #495057; line-height: 1.7; margin-bottom: 40px; font-size: 14px;">
+          アスティアの導入相談、概算費用、設置可否の確認、製品カタログ、補助金に関するご相談などは、下記フォームよりお問い合わせください。<br>
+          設置予定地や使用目的、現在お困りの内容をご記入いただくことで、より具体的なご案内が可能です。内容を確認後、担当者よりご連絡いたします。
+        </p>
+
+        <div class="form-container" style="background: #fff; border: 1px solid var(--color-border); border-radius: 6px; padding: 40px;">
+          <form id="wireframe-form">
+
+            <!-- 1. お問い合わせ種別【必須】 -->
+            <div class="form-group" style="display: grid; grid-template-columns: 280px 1fr; gap: 30px; margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #f1f3f5; align-items: start;">
+              <div>
+                <label class="form-label" style="font-weight: bold; display: block; margin-bottom: 8px;">
+                  1. お問い合わせ種別 <span class="badge-req" style="background: #e63946; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 3px; margin-left: 6px;">必須</span>
+                </label>
+                <p class="form-note" style="font-size: 12px; color: #6c757d; margin-top: 0; margin-bottom: 0;">※複数選択可</p>
+              </div>
+              <div class="form-check-group">
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="type" class="form-check-input" checked> 導入について相談したい</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="type" class="form-check-input"> 概算費用を知りたい</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="type" class="form-check-input"> 設置できるか確認したい</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="type" class="form-check-input"> 実物を見たい</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="type" class="form-check-input"> カタログ・資料について知りたい</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="type" class="form-check-input"> 補助金について相談したい</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="type" class="form-check-input"> メディア・取材について</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="type" class="form-check-input"> その他</label>
+              </div>
+            </div>
+
+            <!-- 2. お客様区分【必須】 -->
+            <div class="form-group" style="display: grid; grid-template-columns: 280px 1fr; gap: 30px; margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #f1f3f5; align-items: start;">
+              <div>
+                <label class="form-label" style="font-weight: bold; display: block; margin-bottom: 8px;">
+                  2. お客様区分 <span class="badge-req" style="background: #e63946; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 3px; margin-left: 6px;">必須</span>
+                </label>
+                <p class="form-note" style="font-size: 12px; color: #6c757d; margin-top: 0; margin-bottom: 0;">※あてはまるものをお選びください。</p>
+              </div>
+              <div class="form-check-group">
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input" checked> 企業</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> 自治体・公共団体</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> 建設・工事関係</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> 農業関係</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> 観光・レジャー施設</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> 山小屋・山岳施設</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> イベント関係</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> 防災・避難所関係</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> 個人</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> その他</label>
+              </div>
+            </div>
+
+            <!-- 3. 会社名・団体名【必須】 -->
+            <div class="form-group" style="display: grid; grid-template-columns: 280px 1fr; gap: 30px; margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #f1f3f5; align-items: start;">
+              <div>
+                <label class="form-label" style="font-weight: bold; display: block; margin-bottom: 8px;">
+                  3. 会社名・団体名 <span class="badge-req" style="background: #e63946; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 3px; margin-left: 6px;">必須</span>
+                </label>
+              </div>
+              <div>
+                <input type="text" class="form-control" placeholder="例：株式会社〇〇／〇〇市役所／〇〇協会など" required style="width: 100%; padding: 10px; border: 1px solid var(--color-border); border-radius: 4px; box-sizing: border-box; font-size: 14px;">
+                <p class="form-note" style="font-size: 12px; color: #6c757d; margin-top: 6px; margin-bottom: 0;">※個人でのお問い合わせの場合は「個人」とご入力ください。</p>
+              </div>
+            </div>
+
+            <!-- 4. ご担当者名【必須】 -->
+            <div class="form-group" style="display: grid; grid-template-columns: 280px 1fr; gap: 30px; margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #f1f3f5; align-items: start;">
+              <div>
+                <label class="form-label" style="font-weight: bold; display: block; margin-bottom: 8px;">
+                  4. ご担当者名 <span class="badge-req" style="background: #e63946; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 3px; margin-left: 6px;">必須</span>
+                </label>
+              </div>
+              <div>
+                <input type="text" class="form-control" placeholder="例：山田太郎" required style="width: 100%; padding: 10px; border: 1px solid var(--color-border); border-radius: 4px; box-sizing: border-box; font-size: 14px;">
+              </div>
+            </div>
+
+            <!-- 5. メールアドレス【必須】 -->
+            <div class="form-group" style="display: grid; grid-template-columns: 280px 1fr; gap: 30px; margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #f1f3f5; align-items: start;">
+              <div>
+                <label class="form-label" style="font-weight: bold; display: block; margin-bottom: 8px;">
+                  5. メールアドレス <span class="badge-req" style="background: #e63946; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 3px; margin-left: 6px;">必須</span>
+                </label>
+              </div>
+              <div>
+                <input type="email" class="form-control" placeholder="例：sample@example.com" required style="width: 100%; padding: 10px; border: 1px solid var(--color-border); border-radius: 4px; box-sizing: border-box; font-size: 14px;">
+              </div>
+            </div>
+
+            <!-- 6. 電話番号【必須】 -->
+            <div class="form-group" style="display: grid; grid-template-columns: 280px 1fr; gap: 30px; margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #f1f3f5; align-items: start;">
+              <div>
+                <label class="form-label" style="font-weight: bold; display: block; margin-bottom: 8px;">
+                  6. 電話番号 <span class="badge-req" style="background: #e63946; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 3px; margin-left: 6px;">必須</span>
+                </label>
+              </div>
+              <div>
+                <input type="tel" class="form-control" placeholder="例：055-000-0000" required style="width: 100%; padding: 10px; border: 1px solid var(--color-border); border-radius: 4px; box-sizing: border-box; font-size: 14px;">
+                <p class="form-note" style="font-size: 12px; color: #6c757d; margin-top: 6px; margin-bottom: 0;">※設置条件の確認やお急ぎの内容について、必要に応じてお電話で確認させていただく場合があります。</p>
+              </div>
+            </div>
+
+            <!-- 7. 設置予定地の地域【任意】 -->
+            <div class="form-group" style="display: grid; grid-template-columns: 280px 1fr; gap: 30px; margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #f1f3f5; align-items: start;">
+              <div>
+                <label class="form-label" style="font-weight: bold; display: block; margin-bottom: 8px;">
+                  7. 設置予定地の地域 <span class="badge-opt" style="background: #6c757d; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 3px; margin-left: 6px;">任意</span>
+                </label>
+              </div>
+              <div>
+                <input type="text" class="form-control" placeholder="例：山梨県甲府市など" style="width: 100%; padding: 10px; border: 1px solid var(--color-border); border-radius: 4px; box-sizing: border-box; font-size: 14px;">
+                <p class="form-note" style="font-size: 12px; color: #6c757d; margin-top: 6px; margin-bottom: 0;">※具体的な住所ではなく、都道府県・市区町村程度で問題ありません。</p>
+              </div>
+            </div>
+
+            <!-- 8. ご相談内容・お問い合わせ内容【必須】 -->
+            <div class="form-group" style="display: grid; grid-template-columns: 280px 1fr; gap: 30px; margin-bottom: 30px; border-bottom: none; align-items: start;">
+              <div>
+                <label class="form-label" style="font-weight: bold; display: block; margin-bottom: 8px;">
+                  8. ご相談内容・お問い合わせ内容 <span class="badge-req" style="background: #e63946; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 3px; margin-left: 6px;">必須</span>
+                </label>
+              </div>
+              <div>
+                <textarea class="form-control" rows="8" placeholder="導入を検討している場所、現在困っていること、知りたい内容などをご記入ください。&#13;&#10;&#13;&#10;例：&#13;&#10;・上下水道がない場所でも設置できるか知りたい&#13;&#10;・災害時に使える防災トイレとして導入を検討している&#13;&#10;・概算費用や導入までの流れを確認したい" required style="width: 100%; padding: 12px; border: 1px solid var(--color-border); border-radius: 4px; box-sizing: border-box; font-size: 14px; line-height: 1.6;"></textarea>
+              </div>
+            </div>
+
+            <!-- 10. 送信ボタン -->
+            <div style="text-align: center; margin-top: 40px;">
+              <p style="font-size: 13px; color: #6c757d; margin-bottom: 24px;">
+                当社の「個人情報保護方針」に同意いただいた上で、以下の送信ボタンを押してください。
+              </p>
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; max-width: 360px; height: 50px; cursor: pointer;">送信する</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+  <!-- 無限スライダーセクション -->
+  <section class="infinite-slider-section">
+    <div class="slider-container">
+      <div class="slider-track">
+        <div class="slider-item">導入実績・写真 1</div>
+        <div class="slider-item">導入実績・写真 2</div>
+        <div class="slider-item">導入実績・写真 3</div>
+        <div class="slider-item">導入実績・写真 4</div>
+        <div class="slider-item">導入実績・写真 5</div>
+        <div class="slider-item">導入実績・写真 6</div>
+        <!-- ループ用（無限スクロール実現のために同一内容を複製） -->
+        <div class="slider-item">導入実績・写真 1</div>
+        <div class="slider-item">導入実績・写真 2</div>
+        <div class="slider-item">導入実績・写真 3</div>
+        <div class="slider-item">導入実績・写真 4</div>
+        <div class="slider-item">導入実績・写真 5</div>
+        <div class="slider-item">導入実績・写真 6</div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- 共通フッター -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner" style="display: flex; flex-direction: column; align-items: center; gap: 30px; margin-bottom: 30px;">
+        <div class="footer-logo-area">
+          <a href="index.html" class="footer-logo">
+            <img src="logo.png" alt="asuthia -アスティア-">
+          </a>
+        </div>
+        <div class="footer-links" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px 15px; font-size: 14px; color: #6c757d;">
+          <span>|</span>
+          <a href="product.html" style="color: #f8f9fa;">製品紹介</a>
+          <span>|</span>
+          <a href="cases.html" style="color: #f8f9fa;">導入事例</a>
+          <span>|</span>
+          <a href="faq.html" style="color: #f8f9fa;">よくある質問</a>
+          <span>|</span>
+          <a href="company.html" style="color: #f8f9fa;">会社案内</a>
+          <span>|</span>
+          <a href="contact.html" style="color: #f8f9fa;">お問い合わせ</a>
+          <span>|</span>
+        </div>
+      </div>
+      <div class="copyright" style="text-align: center;">
+        &copy; ASTIA All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

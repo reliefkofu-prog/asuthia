@@ -1,0 +1,953 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+   WordPress Theme "SWELL" Wireframe Stylesheet
+   Project: Astia (アスティア) Web Site Wireframe
+   Color Palette: White, Black, Gray (Monochrome)
+   Layout: Desktop Only (1440px assumed, Max Content Width 1200px, Centered)
+   ========================================================================== */
+
+:root {
+  --color-white: #ffffff;
+  --color-bg-light: #f8f9fa;
+  --color-bg-gray: #f1f3f5;
+  --color-border: #dee2e6;
+  --color-border-dark: #adb5bd;
+  --color-text-main: #212529;
+  --color-text-muted: #6c757d;
+  --color-black: #111111;
+  
+  --font-family-main: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
+  --max-width-container: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-main);
+  color: var(--color-text-main);
+  background-color: var(--color-white);
+  line-height: 1.7;
+  font-size: 16px;
+  min-width: 1280px; /* Desktop only assumed */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Container & Layout --- */
+.container {
+  width: 100%;
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section {
+  padding: 80px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.section.bg-light {
+  background-color: var(--color-bg-light);
+}
+
+.section.bg-gray {
+  background-color: var(--color-bg-gray);
+}
+
+/* --- Wireframe Notice Bar (UI Prototype Indicator) --- */
+.wireframe-notice {
+  background-color: #212529;
+  color: #f8f9fa;
+  font-size: 13px;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid #495057;
+}
+.wireframe-notice span {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 2px 8px;
+  background: #343a40;
+  border-radius: 3px;
+}
+
+/* --- Common Header (SWELL Style) --- */
+.site-header {
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-border); /* 下線を薄いグレーに変更 */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.site-logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.site-logo img {
+  height: 38px;
+  width: auto;
+  display: block;
+}
+
+.logo-placeholder {
+  width: 180px;
+  height: 44px;
+  background-color: #e9ecef;
+  border: 2px solid #ced4da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  color: #495057;
+  letter-spacing: 0.05em;
+}
+
+.global-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.global-nav a {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-text-main);
+  padding: 8px 0;
+  position: relative;
+}
+
+.global-nav a.active {
+  font-weight: 700;
+  border-bottom: 2px solid var(--color-black);
+}
+
+.header-cta {
+  margin-left: 16px;
+}
+
+/* --- Footer CTA Section (フッター前CTAセクション：濃いめのグレー) --- */
+.footer-cta-section {
+  background-color: #5a6268; /* コンテンツヘッダーと同じグレーに変更 */
+  color: #ffffff;
+  padding: 60px 0;
+  text-align: center;
+  border-bottom: none;
+}
+
+.footer-cta-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footer-cta-section h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #ffffff;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.footer-cta-section h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #ffffff; /* 背景が濃いグレーのため白線に設定 */
+  margin: 16px 0 0;
+}
+
+.footer-cta-section p {
+  font-size: 15px;
+  color: #ced4da;
+  margin-bottom: 24px;
+  line-height: 1.8;
+}
+
+.footer-cta-section .btn {
+  background-color: #ffffff;
+  color: #5a6268; /* 文字色をセクション背景色と同じに統一 */
+  border-color: #ffffff;
+}
+
+.footer-cta-section .btn:hover {
+  background-color: #f1f3f5;
+  color: #5a6268;
+}
+
+/* --- Common Footer (SWELL Style) --- */
+.site-footer {
+  background-color: #343a40; /* 濃いめのグレーに変更 */
+  color: #f8f9fa;
+  padding: 50px 0 30px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.footer-logo-area {
+  flex-shrink: 0;
+}
+
+.footer-logo img {
+  height: 34px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1); /* 濃い背景用にロゴを白く反転 */
+}
+
+.footer-sitemap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer-sitemap h4 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #495057;
+  padding-bottom: 8px;
+}
+
+.footer-sitemap ul li {
+  margin-bottom: 12px;
+}
+
+.footer-sitemap ul a {
+  font-size: 14px;
+  color: #ced4da;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 13px;
+  color: #6c757d;
+  border-top: 1px solid #343a40;
+  padding-top: 24px;
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border: 2px solid var(--color-black);
+}
+
+.btn-primary:hover {
+  background-color: #343a40;
+  border-color: #343a40;
+  opacity: 1;
+}
+
+.btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border: 2px solid var(--color-black);
+}
+
+.btn-secondary:hover {
+  background-color: #f1f3f5;
+  opacity: 1;
+}
+
+.btn-lg {
+  padding: 18px 44px;
+  font-size: 16px;
+}
+
+.btn-sm {
+  padding: 8px 20px;
+  font-size: 13px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: left; /* センター寄せから左揃えに変更 */
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: var(--color-black);
+  margin: 16px 0 0; /* アンダーラインを左寄せに調整 */
+}
+
+.lead-text {
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-text-muted);
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.lead-text.text-left {
+  text-align: left;
+  margin: 0 0 30px 0;
+}
+
+.page-header {
+  background-color: #5a6268; /* やや薄めのミディアムグレーに変更 */
+  padding: 90px 0; /* 高さをさらに1.5倍に拡張（60px -> 90px） */
+  border-bottom: 1px solid #6c757d; /* 境界線も少し薄めのグレーに調整 */
+}
+
+.page-title {
+  font-size: 22px; /* フォントを小さく調整（32px -> 22px） */
+  font-weight: 700;
+  color: #ffffff; /* フォントカラーを白に変更 */
+  margin-bottom: 0; /* 下部マージンを排除しセンター配置を均等に */
+}
+
+/* --- Breadcrumb --- */
+.breadcrumb {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+}
+.breadcrumb a {
+  color: var(--color-text-muted);
+}
+.breadcrumb span {
+  margin: 0 8px;
+}
+
+/* --- Placeholders --- */
+.placeholder-box {
+  background-color: #e9ecef;
+  border: 2px dashed #adb5bd;
+  color: #495057;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholder-box span.sub-label {
+  font-size: 12px;
+  font-weight: normal;
+  color: #6c757d;
+  margin-top: 6px;
+}
+
+.ph-mv {
+  height: 480px;
+  background-color: #dee2e6;
+  border: 3px solid #ced4da;
+  font-size: 20px;
+}
+
+/* FV (First View) Full Width (余白なし) */
+.ph-mv-full {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-color: #dee2e6;
+  border-bottom: 2px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ph-mv-bg-label {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.btn-group-fv {
+  justify-content: flex-start;
+}
+
+.btn-group-fv .btn {
+  padding: 10px 24px;
+  font-size: 14px;
+}
+
+.ph-video {
+  height: 320px;
+  background-color: #d8dde2;
+}
+
+.ph-diagram {
+  height: 380px;
+  width: 100%;
+  margin: 30px 0;
+  background-color: #e2e6ea;
+}
+
+.ph-card-img {
+  height: 200px;
+  width: 100%;
+}
+
+.ph-gallery-img {
+  height: 240px;
+  width: 100%;
+}
+
+.ph-logo {
+  height: 80px;
+  width: 220px;
+}
+
+/* --- Layout Grids (SWELL Auto Layout style) --- */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* --- Cards (SWELL Style) --- */
+.card {
+  background-color: var(--color-bg-light); /* 背景色を薄めのグレーに変更 */
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--color-black);
+}
+
+.card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+/* Feature Card Specific */
+.feature-card {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #ffffff; /* 背景色を白に変更 */
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+}
+
+.feature-icon-ph {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #dee2e6;
+  border: 2px solid #adb5bd;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #495057;
+  font-weight: bold;
+}
+
+/* Case Study Card Specific */
+.case-card .badge-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #e9ecef;
+  color: #495057;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+}
+
+.badge-dark {
+  background-color: #343a40;
+  color: #fff;
+  border-color: #343a40;
+}
+
+/* --- CTA Banner Blocks (SWELL Style) --- */
+.cta-banner {
+  background-color: var(--color-bg-gray);
+  border: 2px solid var(--color-border);
+  border-radius: 8px;
+  padding: 60px 40px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.cta-banner h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.cta-banner p {
+  font-size: 15px;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- FAQ Styles (Static clean style) --- */
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto 20px;
+}
+
+.faq-item-static {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq-item-static:last-child {
+  border-bottom: none;
+}
+
+.faq-q-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.faq-icon-q {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: #212529; /* ダークグレーのQマークスクエア */
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 13px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.faq-question-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.faq-a-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.faq-icon-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: #6c757d; /* ミディアムグレーのAマークスクエア */
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 13px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.faq-answer-text {
+  font-size: 15px;
+  color: var(--color-text-main);
+  line-height: 1.8;
+  padding-top: 2px;
+  margin: 0;
+}
+
+.faq-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3つずつの2行グリッド */
+  gap: 14px;
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
+
+.faq-nav a {
+  display: block;
+  text-align: center;
+  padding: 14px 20px;
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-main);
+  transition: all 0.2s ease;
+}
+
+.faq-nav a:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-color: var(--color-black);
+}
+
+/* --- Tables (Comparison & Company Info) --- */
+.table-wrapper {
+  overflow-x: auto;
+  margin: 30px 0 50px;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  border: 1px solid var(--color-border);
+}
+
+.custom-table th, .custom-table td {
+  padding: 18px 24px;
+  border: 1px solid var(--color-border);
+}
+
+.custom-table th {
+  background-color: #e9ecef;
+  font-weight: 700;
+  color: #212529;
+  white-space: nowrap;
+}
+
+.custom-table tr:nth-child(even) td {
+  background-color: #f8f9fa;
+}
+
+/* Compare table specific columns */
+.compare-table th:nth-child(1) { width: 25%; }
+.compare-table th:nth-child(2) { width: 25%; }
+.compare-table th:nth-child(3) { width: 50%; }
+
+/* Info table specific columns */
+.info-table th { width: 25%; }
+.info-table td { width: 75%; }
+
+/* --- Lists & Boxes --- */
+.check-list {
+  margin: 20px 0;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+
+.check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  color: #212529;
+  background: #e9ecef;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.info-box {
+  background-color: var(--color-bg-light);
+  border-left: 4px solid var(--color-black);
+  padding: 24px;
+  margin: 24px 0;
+}
+
+/* --- Form Styles (SWELL Style) --- */
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 36px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.form-group:last-of-type {
+  border-bottom: none;
+}
+
+.form-label {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #212529;
+}
+
+.badge-req {
+  display: inline-block;
+  background-color: #212529;
+  color: #ffffff;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-weight: normal;
+}
+
+.badge-opt {
+  display: inline-block;
+  background-color: #adb5bd;
+  color: #ffffff;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-weight: normal;
+}
+
+.form-control {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #212529;
+  box-shadow: 0 0 0 3px rgba(33, 37, 41, 0.1);
+}
+
+.form-check-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.form-check-label {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  transition: opacity 0.2s ease;
+}
+
+.form-check-label:hover {
+  opacity: 0.7;
+}
+
+.form-check-input {
+  margin-right: 12px;
+  width: 18px;
+  height: 18px;
+  accent-color: #212529;
+}
+
+.form-note {
+  font-size: 13px;
+  color: #6c757d;
+  margin-top: 8px;
+}
+
+/* --- Template View Area --- */
+.template-highlight {
+  border: 3px double var(--color-black);
+  padding: 40px;
+  margin: 60px 0;
+  background-color: #fdfdfd;
+}
+.template-header {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+/* --- 無限スライダー --- */
+.infinite-slider-section {
+  padding: 0;
+  background-color: #f8f9fa;
+  overflow: hidden;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.slider-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  gap: 0;
+  animation: infinite-scroll 25s linear infinite;
+  width: max-content;
+}
+
+.slider-item {
+  width: 250px;
+  height: 167px;
+  background: #dee2e6;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  flex-shrink: 0;
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: bold;
+  border-right: 1px solid var(--color-border-dark);
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1500px); /* 250px * 6 items */
+  }
+}
+
