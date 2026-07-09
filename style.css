@@ -951,3 +951,12 @@ img {
   }
 }
 
+/* --- 共通: テキスト・見出し中央寄せ --- */
+.section-title.text-center {
+  text-align: center;
+}
+.section-title.text-center::after {
+  margin: 16px auto 0;
+}
+
+

@@ -87,18 +87,16 @@
                 <label class="form-label" style="font-weight: bold; display: block; margin-bottom: 8px;">
                   2. お客様区分 <span class="badge-req" style="background: #e63946; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 3px; margin-left: 6px;">必須</span>
                 </label>
-                <p class="form-note" style="font-size: 12px; color: #6c757d; margin-top: 0; margin-bottom: 0;">※あてはまるものをお選びください。</p>
+                <p class="form-note" style="font-size: 12px; color: #6c757d; margin-top: 0; margin-bottom: 0;">※複数選択可</p>
               </div>
               <div class="form-check-group">
-                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input" checked> 企業</label>
+                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> 企業</label>
                 <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> 自治体・公共団体</label>
                 <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> 建設・工事関係</label>
                 <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> 農業関係</label>
                 <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> 観光・レジャー施設</label>
                 <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> 山小屋・山岳施設</label>
-                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> イベント関係</label>
                 <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> 防災・避難所関係</label>
-                <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> 個人</label>
                 <label class="form-check-label" style="font-size: 14px; cursor: pointer;"><input type="checkbox" name="category" class="form-check-input"> その他</label>
               </div>
             </div>
@@ -112,7 +110,6 @@
               </div>
               <div>
                 <input type="text" class="form-control" placeholder="例：株式会社〇〇／〇〇市役所／〇〇協会など" required style="width: 100%; padding: 10px; border: 1px solid var(--color-border); border-radius: 4px; box-sizing: border-box; font-size: 14px;">
-                <p class="form-note" style="font-size: 12px; color: #6c757d; margin-top: 6px; margin-bottom: 0;">※個人でのお問い合わせの場合は「個人」とご入力ください。</p>
               </div>
             </div>
 
@@ -124,7 +121,7 @@
                 </label>
               </div>
               <div>
-                <input type="text" class="form-control" placeholder="例：山田太郎" required style="width: 100%; padding: 10px; border: 1px solid var(--color-border); border-radius: 4px; box-sizing: border-box; font-size: 14px;">
+                <input type="text" class="form-control" placeholder="例：山田 太郎" required style="width: 100%; padding: 10px; border: 1px solid var(--color-border); border-radius: 4px; box-sizing: border-box; font-size: 14px;">
               </div>
             </div>
 
@@ -149,20 +146,20 @@
               </div>
               <div>
                 <input type="tel" class="form-control" placeholder="例：055-000-0000" required style="width: 100%; padding: 10px; border: 1px solid var(--color-border); border-radius: 4px; box-sizing: border-box; font-size: 14px;">
-                <p class="form-note" style="font-size: 12px; color: #6c757d; margin-top: 6px; margin-bottom: 0;">※設置条件の確認やお急ぎの内容について、必要に応じてお電話で確認させていただく場合があります。</p>
+                <p class="form-note" style="font-size: 12px; color: #6c757d; margin-top: 6px; margin-bottom: 0;">※設置条件の確認やお急ぎの場合など、内容確認のためにお電話する場合があります。</p>
               </div>
             </div>
 
-            <!-- 7. 設置予定地の地域【任意】 -->
+            <!-- 7. 設置を希望する地域【必須】 -->
             <div class="form-group" style="display: grid; grid-template-columns: 280px 1fr; gap: 30px; margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #f1f3f5; align-items: start;">
               <div>
                 <label class="form-label" style="font-weight: bold; display: block; margin-bottom: 8px;">
-                  7. 設置予定地の地域 <span class="badge-opt" style="background: #6c757d; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 3px; margin-left: 6px;">任意</span>
+                  7. 設置を希望する地域 <span class="badge-req" style="background: #e63946; color: #fff; font-size: 11px; padding: 2px 6px; border-radius: 3px; margin-left: 6px;">必須</span>
                 </label>
               </div>
               <div>
-                <input type="text" class="form-control" placeholder="例：山梨県甲府市など" style="width: 100%; padding: 10px; border: 1px solid var(--color-border); border-radius: 4px; box-sizing: border-box; font-size: 14px;">
-                <p class="form-note" style="font-size: 12px; color: #6c757d; margin-top: 6px; margin-bottom: 0;">※具体的な住所ではなく、都道府県・市区町村程度で問題ありません。</p>
+                <input type="text" class="form-control" placeholder="例：山梨県甲府市など" required style="width: 100%; padding: 10px; border: 1px solid var(--color-border); border-radius: 4px; box-sizing: border-box; font-size: 14px;">
+                <p class="form-note" style="font-size: 12px; color: #6c757d; margin-top: 6px; margin-bottom: 0;">※具体的な住所ではなく、都道府県・市区町村程度で問題ありません。未定の場合は「未定」と入力してください。</p>
               </div>
             </div>
 
@@ -174,7 +171,7 @@
                 </label>
               </div>
               <div>
-                <textarea class="form-control" rows="8" placeholder="導入を検討している場所、現在困っていること、知りたい内容などをご記入ください。&#13;&#10;&#13;&#10;例：&#13;&#10;・上下水道がない場所でも設置できるか知りたい&#13;&#10;・災害時に使える防災トイレとして導入を検討している&#13;&#10;・概算費用や導入までの流れを確認したい" required style="width: 100%; padding: 12px; border: 1px solid var(--color-border); border-radius: 4px; box-sizing: border-box; font-size: 14px; line-height: 1.6;"></textarea>
+                <textarea class="form-control" rows="8" placeholder="例：&#13;&#10;導入を検討している場所、現在困っていること、知りたい内容などをご記入ください。" required style="width: 100%; padding: 12px; border: 1px solid var(--color-border); border-radius: 4px; box-sizing: border-box; font-size: 14px; line-height: 1.6;"></textarea>
               </div>
             </div>
 

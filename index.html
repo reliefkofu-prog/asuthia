@@ -28,16 +28,28 @@
 
   <main>
     <!-- 1-1. メインビジュアル (背景写真スライド余白なし・コピー及びCTAボタン) -->
-    <section class="ph-mv-full">
-      <div class="ph-mv-bg-label">背景写真2〜3枚</div>
-      <div class="container" style="position: relative; z-index: 2; text-align: left;">
-        <h1 style="font-size: 32px; font-weight: 800; color: #111; line-height: 1.4; margin-bottom: 24px;">
-          水も電源もいらない<br>
-          自己完結型循環トイレシステム
-        </h1>
-        <div class="btn-group btn-group-fv">
-          <a href="product.html" class="btn btn-secondary">製品について詳しくみる</a>
-          <a href="contact.html" class="btn btn-primary">導入相談・お見積もりはこちら</a>
+    <section class="ph-mv-full" style="position: relative; padding: 0;">
+      <!-- 背景：3カラム2行の6枚写真プレースホルダー（白仕切り線入り） -->
+      <div class="mv-bg-grid" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); gap: 4px; background-color: #fff; z-index: 1;">
+        <div style="background-color: #dee2e6; display: flex; align-items: center; justify-content: center; color: #6c757d; font-size: 13px; font-weight: bold;">[写真 1]</div>
+        <div style="background-color: #dee2e6; display: flex; align-items: center; justify-content: center; color: #6c757d; font-size: 13px; font-weight: bold;">[写真 2]</div>
+        <div style="background-color: #dee2e6; display: flex; align-items: center; justify-content: center; color: #6c757d; font-size: 13px; font-weight: bold;">[写真 3]</div>
+        <div style="background-color: #dee2e6; display: flex; align-items: center; justify-content: center; color: #6c757d; font-size: 13px; font-weight: bold;">[写真 4]</div>
+        <div style="background-color: #dee2e6; display: flex; align-items: center; justify-content: center; color: #6c757d; font-size: 13px; font-weight: bold;">[写真 5]</div>
+        <div style="background-color: #dee2e6; display: flex; align-items: center; justify-content: center; color: #6c757d; font-size: 13px; font-weight: bold;">[写真 6]</div>
+      </div>
+      
+      <!-- コンテンツエリア -->
+      <div class="container" style="position: relative; z-index: 2; text-align: center; width: 100%; display: flex; justify-content: center;">
+        <div style="background-color: rgba(255, 255, 255, 0.9); padding: 50px 80px; border-radius: 8px; display: inline-block; max-width: 800px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); text-align: center;">
+          <h1 style="font-size: 32px; font-weight: 800; color: #111; line-height: 1.4; margin-bottom: 24px;">
+            水も電源もいらない<br>
+            自己完結型循環トイレシステム
+          </h1>
+          <div class="btn-group btn-group-fv" style="margin-top: 0; justify-content: center;">
+            <a href="product.html" class="btn btn-secondary">製品について詳しくみる</a>
+            <a href="contact.html" class="btn btn-primary">導入相談・お見積もりはこちら</a>
+          </div>
         </div>
       </div>
     </section>
@@ -123,9 +135,9 @@
           <!-- 特徴6 -->
           <div class="feature-card">
             <div class="feature-icon-ph">[ICON]</div>
-            <h3 class="card-title">設置場所に合わせて対応</h3>
+            <h3 class="card-title">維持管理が低コスト</h3>
             <p class="card-text">
-              移動式、固定式、既存トイレ連結型など、設置場所や利用目的に合わせて導入方法を選べます。利用人数や使用環境に応じたカスタマイズにも対応可能です。
+              循環式システムにより、上下水道にかかるランニングコストはほぼ0円。太陽光発電システムを活用することで、電源にかかる消費電力も0を目指せます。
             </p>
           </div>
         </div>
