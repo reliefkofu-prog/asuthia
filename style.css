@@ -9,13 +9,17 @@
 
 :root {
   --color-white: #ffffff;
-  --color-bg-light: #f8f9fa;
-  --color-bg-gray: #f1f3f5;
+  --color-bg-light: var(--color-primary-light);
+  --color-bg-gray: #e1f0ff;
   --color-border: #dee2e6;
   --color-border-dark: #adb5bd;
   --color-text-main: #212529;
   --color-text-muted: #6c757d;
   --color-black: #111111;
+  --color-primary: #1e90ff; /* アスティア ブランドメインカラー（ドジャーブルー） */
+  --color-primary-dark: #006ee6; /* ホバーや濃いめの装飾用の濃い青 */
+  --color-primary-light: #f0f7ff;
+  --color-accent: #007fff;
   
   --font-family-main: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
   --max-width-container: 1200px;
@@ -157,16 +161,16 @@ img {
 
 .global-nav a.active {
   font-weight: 700;
-  border-bottom: 2px solid var(--color-black);
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
 }
 
 .header-cta {
   margin-left: 16px;
 }
 
-/* --- Footer CTA Section (フッター前CTAセクション：濃いめのグレー) --- */
 .footer-cta-section {
-  background-color: #5a6268; /* コンテンツヘッダーと同じグレーに変更 */
+  background-color: #5a6268;
   color: #ffffff;
   padding: 60px 0;
   text-align: center;
@@ -217,7 +221,7 @@ img {
 
 /* --- Common Footer (SWELL Style) --- */
 .site-footer {
-  background-color: #343a40; /* 濃いめのグレーに変更 */
+  background-color: #1d2974;
   color: #f8f9fa;
   padding: 50px 0 30px;
 }
@@ -289,25 +293,28 @@ img {
 }
 
 .btn-primary {
-  background-color: var(--color-black);
-  color: var(--color-white);
-  border: 2px solid var(--color-black);
+  background-color: var(--color-primary);
+  color: var(--color-white); /* 鮮やかな青背景に対して視認性の高い白文字を適用 */
+  border: 2px solid var(--color-primary);
 }
 
 .btn-primary:hover {
-  background-color: #343a40;
-  border-color: #343a40;
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+  color: var(--color-white);
   opacity: 1;
 }
 
 .btn-secondary {
   background-color: var(--color-white);
-  color: var(--color-black);
-  border: 2px solid var(--color-black);
+  color: var(--color-primary); /* 白背景に対してメインカラーの青を適用 */
+  border: 2px solid var(--color-primary);
 }
 
 .btn-secondary:hover {
-  background-color: #f1f3f5;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
   opacity: 1;
 }
 
@@ -337,15 +344,16 @@ img {
   letter-spacing: 0.05em;
   position: relative;
   padding-bottom: 16px;
+  color: #1d2974; /* セクション見出しの色をネイビーに変更 */
 }
 
 .section-title::after {
   content: "";
   display: block;
   width: 60px;
-  height: 2px;
-  background-color: var(--color-black);
-  margin: 16px 0 0; /* アンダーラインを左寄せに調整 */
+  height: 3px;
+  background-color: #1d2974; /* アンダーラインの色をH2と同じネイビーに変更 */
+  margin: 16px 0 0; /* アンダーラインを左寄せに調整・アスティアブルー反映 */
 }
 
 .lead-text {
@@ -362,9 +370,9 @@ img {
 }
 
 .page-header {
-  background-color: #5a6268; /* やや薄めのミディアムグレーに変更 */
+  background-color: #63a7e9; /* 指定の淡い青に変更 */
   padding: 90px 0; /* 高さをさらに1.5倍に拡張（60px -> 90px） */
-  border-bottom: 1px solid #6c757d; /* 境界線も少し薄めのグレーに調整 */
+  border-bottom: 1px solid #4a8dc9; /* 背景に合わせた境界線 */
 }
 
 .page-title {
@@ -512,7 +520,8 @@ img {
 }
 
 .card:hover {
-  border-color: var(--color-black);
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 15px rgba(22, 99, 199, 0.1);
 }
 
 .card-body {
@@ -526,6 +535,7 @@ img {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 12px;
+  color: var(--color-primary);
 }
 
 .card-text {
@@ -637,7 +647,7 @@ img {
   justify-content: center;
   width: 28px;
   height: 28px;
-  background-color: #212529; /* ダークグレーのQマークスクエア */
+  background-color: var(--color-primary); /* メインカラーのQマークスクエア */
   color: #ffffff;
   font-weight: 800;
   font-size: 13px;
@@ -665,7 +675,7 @@ img {
   justify-content: center;
   width: 28px;
   height: 28px;
-  background-color: #6c757d; /* ミディアムグレーのAマークスクエア */
+  background-color: #ff4b4b; /* メインカラーと同じトーンの赤のAマークスクエア */
   color: #ffffff;
   font-weight: 800;
   font-size: 13px;
@@ -777,7 +787,7 @@ img {
 
 .info-box {
   background-color: var(--color-bg-light);
-  border-left: 4px solid var(--color-black);
+  border-left: 4px solid var(--color-primary);
   padding: 24px;
   margin: 24px 0;
 }
@@ -957,6 +967,80 @@ img {
 }
 .section-title.text-center::after {
   margin: 16px auto 0;
+}
+
+/* --- 追加スタイル：見学希望窓口ボックス・連結型ハイライト等 --- */
+.case-tour-box {
+  background-color: var(--color-primary-light);
+  border: 1px solid #b8daff;
+  border-left: 4px solid var(--color-primary);
+  padding: 16px 20px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+.case-tour-box h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.case-tour-box p {
+  font-size: 14px;
+  color: var(--color-text-main);
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.tour-contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  background: #ffffff;
+  padding: 8px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.tour-contact-info span {
+  color: var(--color-primary-dark);
+}
+
+/* 連結型ハイライト導線・セクション */
+.connect-highlight-banner {
+  background-color: #f0f8ff; /* 薄い水色系背景 */
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 35px 40px;
+  margin: 40px 0;
+  text-align: left;
+}
+.connect-highlight-banner h3 {
+  color: var(--color-primary-dark);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+/* アワードロゴスペース */
+.fv-award-area {
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.fv-award-area img {
+  max-height: 80px;
+  width: auto;
+  margin: 0 auto;
+}
+
+/* --- 製品紹介ページ専用スタイル --- */
+.page-product .section-title {
+  color: var(--color-black); /* 見出し色をブラックに変更 */
+}
+.page-product .section-title::after {
+  background-color: var(--color-primary); /* 下線部をメインカラー（青）に変更 */
 }
 
 
