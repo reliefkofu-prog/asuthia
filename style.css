@@ -1034,3 +1034,9 @@ img {
   width: auto;
   margin: 0 auto;
 }
+
+/* --- 製品紹介ページ専用スタイル --- */
+.page-product .section {
+  border-bottom: none;
+}
+
