@@ -10,16 +10,16 @@
 :root {
   --color-white: #ffffff;
   --color-bg-light: var(--color-primary-light);
-  --color-bg-gray: #e1f0ff;
+  --color-bg-gray: #e8ebf5;
   --color-border: #dee2e6;
   --color-border-dark: #adb5bd;
   --color-text-main: #212529;
   --color-text-muted: #6c757d;
   --color-black: #111111;
-  --color-primary: #1e90ff; /* アスティア ブランドメインカラー（ドジャーブルー） */
-  --color-primary-dark: #006ee6; /* ホバーや濃いめの装飾用の濃い青 */
-  --color-primary-light: #f0f7ff;
-  --color-accent: #007fff;
+  --color-primary: #1d2974; /* アスティア ブランドメインカラー（ネイビー） */
+  --color-primary-dark: #121a4a; /* ホバーや濃いめの装飾用の濃いネイビー */
+  --color-primary-light: #f3f4fa; /* 薄いネイビー背景 */
+  --color-accent: #2b3da8;
   
   --font-family-main: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
   --max-width-container: 1200px;
@@ -344,7 +344,7 @@ img {
   letter-spacing: 0.05em;
   position: relative;
   padding-bottom: 16px;
-  color: #1d2974; /* セクション見出しの色をネイビーに変更 */
+  color: var(--color-primary); /* セクション見出しの色をメインカラーに変更 */
 }
 
 .section-title::after {
@@ -352,7 +352,7 @@ img {
   display: block;
   width: 60px;
   height: 3px;
-  background-color: #1d2974; /* アンダーラインの色をH2と同じネイビーに変更 */
+  background-color: var(--color-primary); /* アンダーラインの色をメインカラーに変更 */
   margin: 16px 0 0; /* アンダーラインを左寄せに調整・アスティアブルー反映 */
 }
 
@@ -370,9 +370,9 @@ img {
 }
 
 .page-header {
-  background-color: #63a7e9; /* 指定の淡い青に変更 */
+  background-color: #7781b9; /* 指定のくすみブルーに変更 */
   padding: 90px 0; /* 高さをさらに1.5倍に拡張（60px -> 90px） */
-  border-bottom: 1px solid #4a8dc9; /* 背景に合わせた境界線 */
+  border-bottom: 1px solid #5d669c; /* 背景に合わせた境界線 */
 }
 
 .page-title {
@@ -1034,13 +1034,3 @@ img {
   width: auto;
   margin: 0 auto;
 }
-
-/* --- 製品紹介ページ専用スタイル --- */
-.page-product .section-title {
-  color: var(--color-black); /* 見出し色をブラックに変更 */
-}
-.page-product .section-title::after {
-  background-color: var(--color-primary); /* 下線部をメインカラー（青）に変更 */
-}
-
-
