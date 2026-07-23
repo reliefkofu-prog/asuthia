@@ -26,7 +26,7 @@
 | :--- | :--- | :--- |
 | **1. トップページ** | [index.html](file:///Users/satoseiya/Desktop/AG/%E3%82%A2%E3%82%B9%E3%83%86%E3%82%A3%E3%82%A2%E6%A7%98/index.html) | メインビジュアル、アスティア概要動画、6つの特徴カード、各下層への誘導CTAバナー |
 | **2. 製品紹介** | [product.html](file:///Users/satoseiya/Desktop/AG/%E3%82%A2%E3%82%B9%E3%83%86%E3%82%A3%E3%82%A2%E6%A7%98/product.html) | 循環システム図解、設置場所9グリッド、導入方法比較表（4タイプ）、カスタマイズ仕様 |
-| **3. 導入事例** | [cases.html](file:///Users/satoseiya/Desktop/AG/%E3%82%A2%E3%82%B9%E3%83%86%E3%82%A3%E3%82%A2%E6%A7%98/cases.html) | 指定された4つの事例（富士桜カントリー倶楽部様、工場様、FUJIYAMAツインテラス様、ぶどう園様）を「移動式」「移動式／固定式」「固定式」のカテゴリ別セクションに分け、1ページ内で詳細まで確認できるように集約。 |
+| **3. 導入事例** | [cases.html](file:///Users/satoseiya/Desktop/AG/%E3%82%A2%E3%82%B9%E3%83%86%E3%82%A3%E3%82%A2%E6%A7%98/cases.html) | 導入事例（富士桜カントリー倶楽部様、製造工場様、三ツ峠登山道様、さくら公園様）を「移動式」「固定式」のカテゴリ別セクションに分け、1ページ内で詳細まで確認できるように集約。 |
 | **4. よくある質問** | [faq.html](file:///Users/satoseiya/Desktop/AG/%E3%82%A2%E3%82%B9%E3%83%86%E3%82%A3%E3%82%A2%E6%A7%98/faq.html) | ページ内カテゴリナビ、アコーディオン形式FAQパーツ（全6カテゴリ・31質問） |
 | **5. 会社概要** | [company.html](file:///Users/satoseiya/Desktop/AG/%E3%82%A2%E3%82%B9%E3%83%86%E3%82%A3%E3%82%A2%E6%A7%98/company.html) | 会社概要テーブル、開発に込めた想い（2カラム）、SDGs目標6、ヤマゲン連携、受賞情報 |
 | **6. お問い合わせ** | [contact.html](file:///Users/satoseiya/Desktop/AG/%E3%82%A2%E3%82%B9%E3%83%86%E3%82%A3%E3%82%A2%E6%A7%98/contact.html) | カタログ請求案内、指定10項目の入力フォーム（必須／任意バッジ、チェックボックス等） |
